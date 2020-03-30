@@ -3,6 +3,15 @@ var w = 1000,
 
 var body = d3.select('body')
 var container = d3.select("#container");
+
+container.append('h1')
+  .attr('id', 'title')
+  .text('United States Educational Attainment');
+
+container.append('div')
+  .attr('id', 'description')
+  .text('Percentage of adults with a bachelor"s degree or higher');
+
 var svg = container.append('svg')
   .attr('width', w)
   .attr('height', h)
