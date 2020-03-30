@@ -27,8 +27,8 @@ var g = svg.append("g")
 g.selectAll("rect")
   .data(color.range().map(d => {
     d = color.invertExtent(d);
-    if (d[0] === null) d[0] = xScale.domain()[0];
-    if (d[1] === null) d[1] = xScale.domain()[1];
+    if (d[0] == null) d[0] = xScale.domain()[0];
+    if (d[1] == null) d[1] = xScale.domain()[1];
     return d;
   }))
   .enter()
